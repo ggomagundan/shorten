@@ -1,0 +1,12 @@
+<% title "Short Url" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @short_url.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_short_url_path(@short_url) %> |
+  <%= link_to "Destroy", @short_url, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", short_urls_path %>
+</p>

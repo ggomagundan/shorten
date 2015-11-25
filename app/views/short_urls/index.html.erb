@@ -1,0 +1,17 @@
+<% title "Short Urls" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% for short_url in @short_urls %>
+    <tr>
+      <td><%= short_url.name %></td>
+      <td><%= link_to "Show", short_url %></td>
+      <td><%= link_to "Edit", edit_short_url_path(short_url) %></td>
+      <td><%= link_to "Destroy", short_url, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Short Url", new_short_url_path %></p>

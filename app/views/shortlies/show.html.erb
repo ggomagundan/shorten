@@ -1,0 +1,12 @@
+<% title "Shortly" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @shortly.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_shortly_path(@shortly) %> |
+  <%= link_to "Destroy", @shortly, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", shortlies_path %>
+</p>

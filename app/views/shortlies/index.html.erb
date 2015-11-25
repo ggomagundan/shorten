@@ -1,0 +1,38 @@
+
+<%= form_tag shortlies_path, class: "", style: "text-align:center;", method: :post do  %>
+  <div class="" style="display:inline-block;width:70%;">
+    <%= text_field_tag :"shortly[original_url]", "", class: "form-control", placeholder: "test", style: "min-width:350px;" %>
+  </div>
+  <div class="" style="display:inline-block;width:70%;">
+    <%= submit_tag "Shortly", class: "btn btn-success", style: "min-width: 150px;margin-top: 20px;" %>
+  </div>
+<% end %>
+<!-- Polyfill Web Components support for older browsers -->
+<%= javascript_include_tag "/components/webcomponentsjs/webcomponents-lite.min.js" %>
+
+<!-- Import element -->
+<link rel="import" href="/components/google-map/google-map.html">
+
+
+<style>
+  google-map {
+    height: 600px;
+  }
+</style>
+<google-map latitude="37.77493" longitude="-122.41942"></google-map>
+
+<div class="shorten-info" style="text-align:center;width: 100%; padding-top: 30px;">
+  <div class="info-image">
+    <%= image_tag "/upload_images/choi.jpg" %>
+  </div>
+
+  <div class="info-url">
+    URL
+  </div>
+
+  <div class="info-url">
+    COPY
+  </div>
+
+
+</div>
