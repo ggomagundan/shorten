@@ -67,3 +67,6 @@ gem 'pry'
 gem "mocha"
 gem 'polymer-rails'
 gem 'polymer-iron-rails'
+
+gem 'rspec-rails' # FOR TRAVIS
+

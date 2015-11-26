@@ -4,10 +4,10 @@
 require File.expand_path('../config/application', __FILE__)
 
 ## FOR TRAVIS CI START
-require 'rspec/core/rake_taks'
+#require 'rspec/core/rake_taks'
 
-task :default => :spec
-RSpec::Core::RakeTask.new
+#task :default => :spec
+#RSpec::Core::RakeTask.new
 ## FOR TRAVIS CI END
 
 Rails.application.load_tasks
