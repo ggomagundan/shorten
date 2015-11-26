@@ -6,7 +6,7 @@ require File.expand_path('../config/application', __FILE__)
 ## FOR TRAVIS CI START
 require 'rspec/core/rake_taks'
 
-task :default  -> :spec
+task :default => :spec
 RSpec::Core::RakeTask.new
 ## FOR TRAVIS CI END
 
