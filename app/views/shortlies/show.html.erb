@@ -1,12 +1,27 @@
-<% title "Shortly" %>
+<div style=text-align:center;">
+  <p>
+    <%= @shortly.original_url%> 으로 이동 합니다 .......
+  </p>
+  <p>
+    BiteUrl 많이 이용해주세요 ^^~
+  </p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @shortly.name %>
-</p>
 
-<p>
-  <%= link_to "Edit", edit_shortly_path(@shortly) %> |
-  <%= link_to "Destroy", @shortly, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", shortlies_path %>
-</p>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- ShortenUrl -->
+  <ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-9646834340680693"
+    data-ad-slot="9722086250"
+    data-ad-format="auto">
+  </ins>
+
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+
+  <script>
+    setTimeout(function(){ location.href="<%= @shortly.original_url %>" }, 1000);
+  </script>
+</div>

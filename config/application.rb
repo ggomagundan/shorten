@@ -1,11 +1,13 @@
 require File.expand_path('../boot', __FILE__)
 
-#require 'rails/all'
+require 'rails/all'
+=begin
 require "active_model/railtie"
 require "action_controller/railtie"
 require "action_mailer/railtie"
 require "action_view/railtie"
 require "sprockets/railtie"
+=end
 
 
 # Require the gems listed in Gemfile, including any gems
@@ -37,7 +39,8 @@ module Shortly
     config.encoding = "utf-8"
 
     config.autoload_paths += %W(#{config.root}/lib)
-    config.assets.precompile += [/.*\.js/,/.*\.css/]
+    config.assets.precompile += %w( *.css *.js )
+
 
 
 

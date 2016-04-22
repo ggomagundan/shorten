@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'rails', '5.0.0.beta3'
+gem 'puma'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -12,8 +11,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-gem 'sprockets-rails'
-gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
+gem 'mysql2', '~> 0.3.18'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -45,7 +43,8 @@ group :development, :test do
 end
 
 
-gem 'mongoid'
+
+#gem 'mongoid', '~> 5.1.0'
 gem 'exception_notification'
 gem 'redis'
 #gem 'dragonfly'
@@ -56,10 +55,10 @@ gem 'mini_magick'
 # gem 'carrierwave'
 # gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
 # gem 'carrierwave-ftp', :require => 'carrierwave/storage/sftp' # SFTP only
-gem 'mongoid-grid_fs', github: 'ahoward/mongoid-grid_fs'
+#gem 'mongoid-grid_fs', github: 'ahoward/mongoid-grid_fs'
 
 gem 'whenever'
-gem 'bson_ext'
+#gem 'bson_ext'
 gem 'koala'
 gem 'nokogiri'
 gem 'pry'
@@ -68,5 +67,5 @@ gem "mocha"
 gem 'polymer-rails'
 gem 'polymer-iron-rails'
 
-gem 'rspec-rails' # FOR TRAVIS
+gem 'rspec-rails'
 

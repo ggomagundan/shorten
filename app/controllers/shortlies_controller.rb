@@ -1,10 +1,20 @@
 class ShortliesController < ApplicationController
 
   def index
+    @shortly = ShortUrl.where(index: params[:id]).first 
   end
 
   def show
-    @shortly = ShortUrl.find(params[:id])
+    @shortly = ShortUrl.where(index: params[:id]).first
+    @shortly = ShortUrl.where(shorten_url: params[:id]).first if @shortly.blank?
+    @shortly = ShortUrl.where(reserved_url: params[:id]).first if @shortly.blank?
+
+    if @shortly.present?
+      @shortly.increment! :click_count
+    else
+      redirect_to root_path
+    end
+
   end
 
   def new

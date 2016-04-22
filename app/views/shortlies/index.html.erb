@@ -1,4 +1,21 @@
 
+<div class="ads">
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- ShortenUrl -->
+  <ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-9646834340680693"
+    data-ad-slot="9722086250"
+    data-ad-format="auto">
+  </ins>
+
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+
+
+
 <%= form_tag shortlies_path, class: "", style: "text-align:center;", method: :post do  %>
   <div class="" style="display:inline-block;width:70%;">
     <%= text_field_tag :"shortly[original_url]", "", class: "form-control", placeholder: "test", style: "min-width:350px;" %>
@@ -6,6 +23,26 @@
   <div class="" style="display:inline-block;width:70%;">
     <%= submit_tag "Shortly", class: "btn btn-success", style: "min-width: 150px;margin-top: 20px;" %>
   </div>
+<% end %>
+
+<% if @shortly.present? %>
+
+  <div class="shorten-info" style="text-align:center;width: 100%; padding-top: 30px;">
+    <div class="info-image">
+      <%= image_tag "/upload_images/choi.jpg" %>
+    </div>
+
+    <div class="info-url">
+      http://<%= request.host %><%= ":#{request.port}" if request.port != 80 %><%= @shortly.redirect_url%>
+    </div>
+
+    <div class="info-url">
+      COPY
+    </div>
+
+
+  </div>
+
 <% end %>
 <!-- Polyfill Web Components support for older browsers -->
 <%= javascript_include_tag "/components/webcomponentsjs/webcomponents-lite.min.js" %>
@@ -19,20 +56,6 @@
     height: 600px;
   }
 </style>
+
+
 <google-map latitude="37.77493" longitude="-122.41942"></google-map>
-
-<div class="shorten-info" style="text-align:center;width: 100%; padding-top: 30px;">
-  <div class="info-image">
-    <%= image_tag "/upload_images/choi.jpg" %>
-  </div>
-
-  <div class="info-url">
-    URL
-  </div>
-
-  <div class="info-url">
-    COPY
-  </div>
-
-
-</div>
