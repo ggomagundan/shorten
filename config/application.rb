@@ -6,8 +6,8 @@ require "active_model/railtie"
 require "action_controller/railtie"
 require "action_mailer/railtie"
 require "action_view/railtie"
-require "sprockets/railtie"
 =end
+require "sprockets/railtie"
 
 
 # Require the gems listed in Gemfile, including any gems
@@ -38,8 +38,11 @@ module Shortly
     # config.i18n.default_locale = :de
     config.encoding = "utf-8"
 
+    config.assets.enabled = true
+    config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
+    config.assets.precompile += ["*css*","*js*", "*scss", "*coffee"]
+
     config.autoload_paths += %W(#{config.root}/lib)
-    config.assets.precompile += %w( *.css *.js )
 
 
 

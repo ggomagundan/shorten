@@ -2,6 +2,7 @@ class ShortliesController < ApplicationController
 
   def index
     @shortly = ShortUrl.where(index: params[:id]).first 
+    @recent_shortens = ShortUrl.last(10)
   end
 
   def show

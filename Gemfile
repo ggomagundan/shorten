@@ -30,6 +30,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 gem 'capistrano', group: :development
+gem 'capistrano-rails', group: :development
+gem 'capistrano-bundler', group: :development
 gem 'capistrano3-puma', group: :development
 
 
@@ -38,7 +40,7 @@ group :development, :test do
   gem 'byebug'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 3.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
@@ -66,8 +68,8 @@ gem 'nokogiri'
 gem 'pry'
 
 gem "mocha"
-gem 'polymer-rails'
-gem 'polymer-iron-rails'
+#gem 'polymer-rails'
+#gem 'polymer-iron-rails'
 
-gem 'rspec-rails'
+#gem 'rspec-rails'
 
