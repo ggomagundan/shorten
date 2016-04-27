@@ -73,3 +73,4 @@ gem "mocha"
 
 #gem 'rspec-rails'
 
+gem "clipboard-rails" # For Copy URl to Clipboard

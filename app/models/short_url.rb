@@ -8,10 +8,18 @@ class ShortUrl < ActiveRecord::Base
   include ShortenUrl
 
 
-  def redirect_url
+  def redirect_url(host: "localhost", port: 80)
 
-    "/shortlies/#{self.reserved_url}" if self.reserved_url.present?
-    "/shortlies/#{self.shorten_url}" if self.reserved_url.blank?
+    str = ""
+    if port != 80
+      str = "http://#{host}:#{port}/shortlies/#{self.reserved_url}" if self.reserved_url.present?
+      str = " http://#{host}:#{port}/shortlies/#{self.shorten_url}" if self.reserved_url.blank?
+    else
+      str = "http://#{host}/shortlies/#{self.reserved_url}" if self.reserved_url.present?
+      str = "http://#{host}/shortlies/#{self.shorten_url}" if self.reserved_url.blank?
+    end
+
+    str
 
   end
 
