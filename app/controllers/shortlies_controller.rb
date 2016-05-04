@@ -1,4 +1,6 @@
 class ShortliesController < ApplicationController
+   
+  before_action :check_url, only: :create
 
   def index
     @shortly = ShortUrl.where(index: params[:id]).first 
@@ -67,5 +69,24 @@ class ShortliesController < ApplicationController
   private
   def short_params
     params.require(:shortly).permit(:original_url)
+  end
+
+  def check_url
+    if short_params[:original_url].blank?
+      redirect_to shortlies_path
+    else
+
+      begin
+        value = short_params[:original_url]
+        resp = !!value.match(/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-=\?]*)*\/?$/)
+      rescue URI::InvalidURIError
+        resp = false
+        redirect_to shortlies_path
+      end
+      unless resp == true
+        redirect_to shortlies_path
+      end
+    end
+
   end
 end

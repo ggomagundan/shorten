@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require bootstrap
 //= require clipboard
+//= require toastr.min
 //=# require_tree webcomponentsjs/

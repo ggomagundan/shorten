@@ -70,43 +70,47 @@
 
 <% arr = %w{Red Purple Deep-Purple Indigo Blue Light-Blue Cyan Teal Green Light-Green Lime Yellow Amber Orange Deep-Orange  Brown Grey Blue-Grey Pink} %>
 
-<%= @recent_shortens if @recent_shortens.present? %>
-<% @recent_shortens.each do |recent_shorten| %>
-  <div class="col-md-4 col-sm-6 col-xs-12 recent_shorten">
-    <article class="material-card <%= arr.sample %>">
-      <h2>
-        <span><%= "title" %> <span> <%= "title" %></span ></span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          <%= recent_shorten.redirect_url(host: request.host, port: request.port) %>
-          <span class="label label-primary copy-link" data-clipboard-text="<%= recent_shorten.redirect_url(host: request.host, port: request.port) %>">Copy Link</span>
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <%= image_tag "http://img.yaplog.jp/img/17/pc/y/a/m/yamu98/26/26332.jpg", alt: "Test", class: "img-responsive"  %>
+<div id="recent-shortens">
+  <div id="recent-title">Recent Shorten URLs </div>
+  <% @recent_shortens.each do |recent_shorten| %>
+    <div class="col-md-4 col-sm-6 col-xs-12 recent_shorten">
+      <article class="material-card <%= arr.sample %>">
+        <h2>
+          <span><%= "title" %> <span> <%= "title" %></span ></span>
+          <strong>
+            <i class="fa fa-fw fa-star"></i>
+            <%= recent_shorten.redirect_url(host: request.host, port: request.port) %>
+            <span class="label label-primary copy-link" data-clipboard-text="<%= recent_shorten.redirect_url(host: request.host, port: request.port) %>">Copy Link</span>
+          </strong>
+        </h2>
+        <div class="mc-content">
+          <div class="img-container">
+            <%= image_tag "http://img.yaplog.jp/img/17/pc/y/a/m/yamu98/26/26332.jpg", alt: "Test", class: "img-responsive"  %>
+          </div>
+          <div class="mc-description">
+            <%= "memo" %>
+          </div>
         </div>
-        <div class="mc-description">
-          <%= "memo" %>
+        <a class="mc-btn-action">
+          <i class="fa fa-bars"></i>
+        </a>
+        <div class="mc-footer">
+          <h4>
+            Social
+          </h4>
+          <a class="fa fa-fw fa-facebook"></a>
+          <a class="fa fa-fw fa-twitter"></a>
+          <!--<a class="fa fa-fw fa-linkedin"></a> -->
+          <a class="fa fa-fw fa-google-plus"></a>
         </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <!--<a class="fa fa-fw fa-linkedin"></a> -->
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
+      </article>
+    </div>
 
-<% end %>
+  <% end %>
 
+</div>
+
+<!--
 <script>
      $(function() {
          $('.material-card > .mc-btn-action').click(function () {
@@ -133,3 +137,4 @@
          });
      });
  </script>
+ -->

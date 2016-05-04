@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.0.0.beta3'
+gem 'rails', '5.0.0.beta4'
 gem 'puma'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -74,3 +74,6 @@ gem "mocha"
 #gem 'rspec-rails'
 
 gem "clipboard-rails" # For Copy URl to Clipboard
+
+gem "toastr-rails", github: "ggomagundan/toastr-rails"
+#gem "toastr_rails"
