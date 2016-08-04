@@ -73,7 +73,7 @@
 <div id="recent-shortens">
   <div id="recent-title">Recent Shorten URLs </div>
   <% @recent_shortens.each do |recent_shorten| %>
-    <div class="col-md-4 col-sm-6 col-xs-12 recent_shorten">
+    <div class="col-md-3 col-sm-6 col-xs-12 recent_shorten">
       <article class="material-card <%= arr.sample %>">
         <h2>
           <span><%= "title" %> <span> <%= "title" %></span ></span>
@@ -91,7 +91,7 @@
             <%= "memo" %>
           </div>
         </div>
-        <a class="mc-btn-action">
+        <a class="mc-btn-action none">
           <i class="fa fa-bars"></i>
         </a>
         <div class="mc-footer">
