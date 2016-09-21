@@ -6,6 +6,14 @@ class ShortliesControllerTest < ActionController::TestCase
     assert_template 'index'
   end
 
+=begin
+  def test_create_invalid
+    Shortly.any_instance.stubs(:valid?).returns(false)
+    post :create
+    assert_template 'new'
+  end
+
+=begin
   def test_show
     get :show, :id => Shortly.first
     assert_template 'show'
@@ -51,4 +59,5 @@ class ShortliesControllerTest < ActionController::TestCase
     assert_redirected_to shortlies_url
     assert !Shortly.exists?(shortly.id)
   end
+=end
 end

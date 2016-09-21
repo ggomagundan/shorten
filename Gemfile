@@ -81,3 +81,5 @@ gem "clipboard-rails" # For Copy URl to Clipboard
 
 gem "toastr-rails", github: "ggomagundan/toastr-rails"
 #gem "toastr_rails"
+
+gem 'rails-controller-testing'
