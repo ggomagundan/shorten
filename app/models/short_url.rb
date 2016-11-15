@@ -12,11 +12,11 @@ class ShortUrl < ActiveRecord::Base
 
     str = ""
     if port != 80
-      str = "http://#{host}:#{port}/shortlies/#{self.reserved_url}" if self.reserved_url.present?
-      str = " http://#{host}:#{port}/shortlies/#{self.shorten_url}" if self.reserved_url.blank?
+      str = "http://#{host}:#{port}/#{self.reserved_url}" if self.reserved_url.present?
+      str = " http://#{host}:#{port}/#{self.shorten_url}" if self.reserved_url.blank?
     else
-      str = "http://#{host}/shortlies/#{self.reserved_url}" if self.reserved_url.present?
-      str = "http://#{host}/shortlies/#{self.shorten_url}" if self.reserved_url.blank?
+      str = "http://#{host}/#{self.reserved_url}" if self.reserved_url.present?
+      str = "http://#{host}/#{self.shorten_url}" if self.reserved_url.blank?
     end
 
     str

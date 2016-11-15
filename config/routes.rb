@@ -1,6 +1,17 @@
 Rails.application.routes.draw do
   
 
+  class AuthorUrlConstrainer
+    def matches?(request)
+      id = request.path.gsub("/", "")
+      ShortUrl.find_by_shorten_url(id)
+    end
+  end
+
+  constraints(AuthorUrlConstrainer.new) do
+    get '/:id', to: "shortlies#show", as: 'short_author'
+  end
+
   root 'shortlies#index'
 
   resources :short_urls
