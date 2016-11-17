@@ -1,0 +1,7 @@
+version: v1.5.0
+ignore:
+  SNYK-RUBY-ACTIONVIEW-20271:
+    - '* > rails-controller-testing@1.0.1':
+        reason: None given
+        expires: '2016-12-17T05:57:38.607Z'
+patch: {}
