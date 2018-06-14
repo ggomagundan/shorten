@@ -1,20 +1,20 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.0.0'
+gem 'rails', '5.0.0.1'
 gem 'puma'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.6'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.1.1'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'mysql2'
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.2.1'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -46,14 +46,14 @@ end
 group :development do
 
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console'
+  gem 'web-console', '>= 3.4.0'
 
 end
 
 
 
 #gem 'mongoid', '~> 5.1.0'
-gem 'exception_notification'
+gem 'exception_notification', '>= 4.2.1'
 gem 'redis'
 #gem 'dragonfly'
 
@@ -68,7 +68,7 @@ gem 'mini_magick'
 gem 'whenever'
 #gem 'bson_ext'
 gem 'koala'
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.8.2'
 gem 'pry'
 
 gem "mocha"
@@ -82,4 +82,4 @@ gem "clipboard-rails" # For Copy URl to Clipboard
 gem "toastr-rails", github: "ggomagundan/toastr-rails"
 #gem "toastr_rails"
 
-gem 'rails-controller-testing'
+gem 'rails-controller-testing', '>= 1.0.1'
