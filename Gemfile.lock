@@ -113,7 +113,7 @@ GEM
     metaclass (0.0.4)
     method_source (0.8.2)
     mini_magick (4.5.1)
-    mini_mime (1.0.0)
+    mini_mime (1.0.1)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     mocha (1.2.1)
@@ -126,7 +126,7 @@ GEM
     net-ssh (3.2.0)
     nifty-generators (0.4.6)
     nio4r (1.2.1)
-    nokogiri (1.8.2)
+    nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
     pry (0.10.4)
       coderay (~> 1.1.0)
@@ -170,7 +170,7 @@ GEM
       ffi (>= 0.5.0, < 2)
     rdoc (4.3.0)
     redis (3.3.1)
-    sass (3.5.6)
+    sass (3.6.0)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -187,7 +187,7 @@ GEM
     slop (3.6.0)
     spring (2.0.0)
       activesupport (>= 4.2)
-    sprockets (3.7.1)
+    sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     sprockets-rails (3.2.1)
@@ -207,7 +207,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.3)
       execjs (>= 0.3.0, < 3)
-    web-console (3.6.2)
+    web-console (3.7.0)
       actionview (>= 5.0)
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
@@ -229,29 +229,29 @@ DEPENDENCIES
   capistrano3-puma
   clipboard-rails
   coffee-rails (~> 4.1.1)
-  exception_notification (>= 4.2.1)
+  exception_notification (>= 4.2.2)
   hirb
   jbuilder (~> 2.0)
-  jquery-rails (>= 4.2.1)
+  jquery-rails (>= 4.3.3)
   koala
   mini_magick
   mocha
   mysql2
   nifty-generators
-  nokogiri (>= 1.8.2)
+  nokogiri (>= 1.8.5)
   pry
   puma
   rails (= 5.0.0.1)
   rails-controller-testing (>= 1.0.1)
   redis
-  sass-rails (~> 5.0, >= 5.0.6)
+  sass-rails (~> 5.0, >= 5.0.7)
   sdoc (~> 0.4.0)
   spring
   toastr-rails!
   turbolinks
   uglifier (>= 1.3.0)
-  web-console (>= 3.4.0)
+  web-console (>= 3.6.2)
   whenever
 
 BUNDLED WITH
-   1.16.1
+   1.16.6
