@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '5.0.7.1'
 gem 'puma'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0', '>= 5.0.6'
+gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -14,7 +14,7 @@ gem 'coffee-rails', '~> 4.1.1'
 gem 'mysql2'
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails', '>= 4.2.1'
+gem 'jquery-rails', '>= 4.3.3'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -46,14 +46,14 @@ end
 group :development do
 
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '>= 3.4.0'
+  gem 'web-console', '>= 3.6.2'
 
 end
 
 
 
 #gem 'mongoid', '~> 5.1.0'
-gem 'exception_notification', '>= 4.2.2'
+gem 'exception_notification', '>= 4.3.0'
 gem 'redis'
 #gem 'dragonfly'
 
