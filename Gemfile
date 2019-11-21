@@ -14,7 +14,7 @@ gem 'coffee-rails', '~> 4.1.1'
 gem 'mysql2'
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails', '>= 4.3.3'
+gem 'jquery-rails', '>= 4.3.5'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -46,14 +46,14 @@ end
 group :development do
 
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '>= 3.6.2'
+  gem 'web-console', '>= 3.7.0'
 
 end
 
 
 
 #gem 'mongoid', '~> 5.1.0'
-gem 'exception_notification', '>= 4.3.0'
+gem 'exception_notification', '>= 4.4.0'
 gem 'redis'
 #gem 'dragonfly'
 
@@ -68,7 +68,7 @@ gem 'mini_magick'
 gem 'whenever'
 #gem 'bson_ext'
 gem 'koala'
-gem 'nokogiri', '>= 1.8.2'
+gem 'nokogiri', '>= 1.10.5'
 gem 'pry'
 
 gem "mocha"
@@ -82,4 +82,4 @@ gem "clipboard-rails" # For Copy URl to Clipboard
 gem "toastr-rails", github: "ggomagundan/toastr-rails"
 #gem "toastr_rails"
 
-gem 'rails-controller-testing', '>= 1.0.1'
+gem 'rails-controller-testing', '>= 1.0.4'
