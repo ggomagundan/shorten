@@ -46,7 +46,7 @@ end
 group :development do
 
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '>= 3.7.0'
+  gem 'web-console', '>= 4.0.1'
 
 end
 
