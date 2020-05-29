@@ -50,28 +50,27 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
-    airbrussh (1.1.1)
+    airbrussh (1.4.0)
       sshkit (>= 1.6.1, != 1.7.0)
     arel (9.0.0)
     bindex (0.8.1)
     builder (3.2.4)
     byebug (9.0.6)
-    capistrano (3.6.1)
+    capistrano (3.14.0)
       airbrussh (>= 1.0.0)
-      capistrano-harrow
       i18n
       rake (>= 10.0.0)
       sshkit (>= 1.9.0)
     capistrano-bundler (1.2.0)
       capistrano (~> 3.1)
       sshkit (~> 1.2)
-    capistrano-harrow (0.5.3)
     capistrano-rails (1.2.0)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
-    capistrano3-puma (1.2.1)
-      capistrano (~> 3.0)
-      puma (>= 2.6)
+    capistrano3-puma (4.0.0)
+      capistrano (~> 3.7)
+      capistrano-bundler
+      puma (~> 4.0)
     chronic (0.10.2)
     clipboard-rails (1.5.15)
     coderay (1.1.1)
@@ -126,9 +125,9 @@ GEM
     multi_json (1.14.1)
     multipart-post (2.0.0)
     mysql2 (0.4.5)
-    net-scp (1.2.1)
-      net-ssh (>= 2.6.5)
-    net-ssh (3.2.0)
+    net-scp (3.0.0)
+      net-ssh (>= 2.6.5, < 7.0.0)
+    net-ssh (6.0.2)
     nifty-generators (0.4.6)
     nio4r (2.5.2)
     nokogiri (1.10.9)
@@ -138,7 +137,7 @@ GEM
       method_source (~> 0.8.1)
       slop (~> 3.4)
     public_suffix (2.0.4)
-    puma (4.3.1)
+    puma (4.3.5)
       nio4r (~> 2.0)
     rack (2.2.2)
     rack-test (1.1.0)
@@ -199,7 +198,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sshkit (1.11.4)
+    sshkit (1.21.0)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     thor (1.0.1)
@@ -231,7 +230,7 @@ DEPENDENCIES
   capistrano
   capistrano-bundler
   capistrano-rails
-  capistrano3-puma
+  capistrano3-puma (>= 1.2.1)
   clipboard-rails
   coffee-rails (~> 4.2.2)
   exception_notification (>= 4.4.0)
@@ -245,7 +244,7 @@ DEPENDENCIES
   nifty-generators
   nokogiri (>= 1.10.8)
   pry
-  puma
+  puma (>= 4.3.5)
   rails (= 5.2.4.3)
   rails-controller-testing (>= 1.0.4)
   redis
