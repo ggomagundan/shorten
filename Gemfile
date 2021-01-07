@@ -53,7 +53,7 @@ end
 
 
 #gem 'mongoid', '~> 5.1.0'
-gem 'exception_notification', '>= 4.4.0'
+gem 'exception_notification', '>= 4.4.3'
 gem 'redis'
 #gem 'dragonfly'
 
@@ -68,7 +68,7 @@ gem 'mini_magick'
 gem 'whenever'
 #gem 'bson_ext'
 gem 'koala'
-gem 'nokogiri', '>= 1.10.8'
+gem 'nokogiri', '>= 1.11.0'
 gem 'pry'
 
 gem "mocha"
@@ -82,4 +82,4 @@ gem "clipboard-rails" # For Copy URl to Clipboard
 gem "toastr-rails", github: "ggomagundan/toastr-rails"
 #gem "toastr_rails"
 
-gem 'rails-controller-testing', '>= 1.0.4'
+gem 'rails-controller-testing', '>= 1.0.5'
