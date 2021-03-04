@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.2.4.4'
+gem 'rails', '6.0.3.5'
 gem 'puma', '>= 4.3.5'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.1', '>= 5.1.0'
@@ -53,7 +53,7 @@ end
 
 
 #gem 'mongoid', '~> 5.1.0'
-gem 'exception_notification', '>= 4.4.0'
+gem 'exception_notification', '>= 4.4.3'
 gem 'redis'
 #gem 'dragonfly'
 
@@ -82,4 +82,4 @@ gem "clipboard-rails" # For Copy URl to Clipboard
 gem "toastr-rails", github: "ggomagundan/toastr-rails"
 #gem "toastr_rails"
 
-gem 'rails-controller-testing', '>= 1.0.4'
+gem 'rails-controller-testing', '>= 1.0.5'
