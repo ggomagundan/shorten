@@ -67,7 +67,7 @@ gem 'mini_magick'
 
 gem 'whenever'
 #gem 'bson_ext'
-gem 'koala'
+gem 'koala', '>= 2.4.0'
 gem 'nokogiri', '>= 1.10.8'
 gem 'pry'
 
