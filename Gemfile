@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.2.6.2'
-gem 'puma', '>= 4.3.5'
+gem 'puma', '>= 4.3.9'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.1', '>= 5.1.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -32,7 +32,7 @@ gem 'sdoc', '~> 1.0.0', group: :doc
 gem 'capistrano', group: :development
 gem 'capistrano-rails', group: :development
 gem 'capistrano-bundler', group: :development
-gem 'capistrano3-puma', '>= 1.2.1', group: :development
+gem 'capistrano3-puma', '>= 4.0.0', group: :development
 
 
 group :development, :test do
