@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/ggomagundan/toastr-rails.git
+  remote: https://github.com/ggomagundan/toastr-rails.git
   revision: 552d0870f440dbcbc24396529def6893780c2adc
   specs:
     toastr-rails (2.1.2)
@@ -81,7 +81,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.1.9)
+    concurrent-ruby (1.1.10)
     crass (1.0.6)
     erubi (1.10.0)
     exception_notification (4.5.0)
@@ -91,10 +91,10 @@ GEM
     faraday (0.10.0)
       multipart-post (>= 1.2, < 3)
     ffi (1.15.5)
-    globalid (1.0.0)
+    globalid (1.0.1)
       activesupport (>= 5.0)
     hirb (0.7.3)
-    i18n (1.9.1)
+    i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.0)
       activesupport (>= 5.0.0)
@@ -117,7 +117,7 @@ GEM
     mini_magick (4.9.5)
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
-    minitest (5.15.0)
+    minitest (5.17.0)
     mocha (1.2.1)
       metaclass (~> 0.0.1)
     multi_json (1.14.1)
@@ -207,7 +207,7 @@ GEM
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.0.0)
-    tzinfo (1.2.9)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     uglifier (3.0.3)
       execjs (>= 0.3.0, < 3)
